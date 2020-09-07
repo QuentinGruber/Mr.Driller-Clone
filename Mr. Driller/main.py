@@ -241,7 +241,7 @@ def game(x, y):
 
                     if not inPause and not inMenu and not isDead and not won:
                         inGame = True
-                        player.NeedToIdle(surface)
+                       # player.NeedToIdle(surface)
                         movementHandle(event, surface, player, level, movKeys)
 
                     elif inPause:
@@ -316,7 +316,7 @@ def game(x, y):
                 elif event.key in arrowKeys:    # Block breaking
                     if not inPause and not inMenu and not isDead and not won:
                         inGame = True
-                        player.NeedToIdle(surface)
+                       # player.NeedToIdle(surface)
                         breaking(event, surface, player, level, currentBotLine)
 
                     elif inPause:
